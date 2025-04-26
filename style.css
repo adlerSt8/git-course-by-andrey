@@ -1,0 +1,7 @@
+body {
+    background-color: #f5f5dc;  /* Бежевый цвет */
+    font-family: Arial, sans-serif;  /* Шрифт для текста */
+    color: #333;  /* Цвет текста (тёмный, чтобы было легко читать) */
+    margin: 0;
+    padding: 20px;
+}

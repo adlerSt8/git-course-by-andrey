@@ -1,4 +1,8 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
+# ![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg =20x20)  
 # 🚀 Курс "Основы Git и GitHub"
 
 Добро пожаловать на курс по контролю версий с использованием **Git** и **GitHub**!  
