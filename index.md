@@ -1,4 +1,4 @@
-# ![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg =30x30)  
+# ![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg =10x10)  
 # 🚀 Курс "Основы Git и GitHub"
 
 Добро пожаловать на курс по контролю версий с использованием **Git** и **GitHub**!  
