@@ -1,3 +1,7 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 # 💻 Работа с GitHub Desktop
 
 ## Что такое GitHub Desktop

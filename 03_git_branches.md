@@ -1,3 +1,7 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 # 🌐 Основы работы с GitHub
 
 ## Что такое GitHub

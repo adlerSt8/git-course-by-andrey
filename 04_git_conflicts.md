@@ -1,3 +1,7 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 # ❗ Частые ошибки и их решение
 
 ## Ошибка: "fatal: not a git repository"
