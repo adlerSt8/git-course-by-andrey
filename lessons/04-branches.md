@@ -267,7 +267,7 @@ nav_order: 4
     ```
     <code>Пример с коде</code>
     ```
-    <kbd>Пример с пре, код</kbd>
+    <kbd>Пример с кбд</kbd>
     ```
   </ul>
   <p><strong>Пример:</strong> Вы создали и переключились на ветку <code>new-feature</code> одной командой <code>git checkout -b new-feature</code>, добавили <code>Main.java</code>, а затем переименовали ветку в <code>feature-login</code> с помощью <code>git branch -m feature-login</code>. Это экономит время в Java-проекте.</p>
