@@ -2,24 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body style="margin:0; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-  <header style="background:#24292e; color:#fff; padding:1rem 2rem;">
-    <a href="{{ site.baseurl }}/" style="text-decoration:none; color:#fff; font-size:1.5rem; font-weight:600;">
-      🚀 {{ site.title }}
-    </a>
+<body>
+
+  <header style="background:#222; padding:1rem; text-align:center;">
+    <h1 style="color:#fff; margin:0;">GitHub для Java-разработчиков</h1>
+    <nav style="margin-top:0.5rem;">
+      <a href="{{ '/' | relative_url }}" style="color:#fff; margin:0 1rem;">Главная</a>
+      <a href="{{ '/lessons/01-intro/' | relative_url }}" style="color:#fff; margin:0 1rem;">Введение</a>
+      <a href="{{ '/lessons/06-team-project/' | relative_url }}" style="color:#fff; margin:0 1rem;">Командная работа</a>
+    </nav>
   </header>
 
-  <main style="max-width:960px; margin:2rem auto; padding:0 1rem;">
+  <main style="max-width:800px; margin:2rem auto; padding:0 1rem;">
     {{ content }}
   </main>
 
-  <footer style="background:#f6f8fa; color:#586069; text-align:center; padding:1rem;">
-    © {{ site.time | date: "%Y" }} {{ site.title }}. Курс открыт для всех.
+  <footer style="text-align:center; padding:2rem; color:#777;">
+    Сделано для обучения ❤️
   </footer>
+
 </body>
 </html>
