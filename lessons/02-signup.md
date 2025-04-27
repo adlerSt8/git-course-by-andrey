@@ -63,37 +63,37 @@ nav_order: 2
       <ul style="padding-left:1.5rem;">
         <li>Для Ubuntu/Debian:</li>
         ```
-        <pre><code>sudo apt update</pre></code>
-        <pre><code>sudo apt install git</pre></code>
+        <pre><code>sudo apt update</code></pre>
+        <pre><code>sudo apt install git</code></pre>
         ```
         <li>Для Fedora:</li>
         ```
-        <pre><code>sudo dnf install git</pre></code>
+        <pre><code>sudo dnf install git</code></pre>
         ```
       </ul>
     </li>
     <li><strong>MacOS:</strong> Установите Git через Homebrew:</li>
     ```
-    <pre><code>brew install git</pre></code>
+    <pre><code>brew install git</code></pre>
     ```
     <p>Если Homebrew не установлен, выполните:</p>
     ```
-    <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre></code>
+    <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></pre>
     ```
     <p>Или скачайте Git с <a href="https://git-scm.com/download/mac" style="color:#007bff; text-decoration:none;">официального сайта</a>.</p>
   </ul>
   <p>После установки проверьте версию:</p>
   ```
-  <pre><code>git --version</pre></code>
+  <pre><code>git --version</code></pre>
   ```
   <p>Ожидаемый вывод: <code>git version 2.39.2</code> (или новее).</p>
   <p><strong>Пример:</strong> Вы установили Git на Ubuntu, выполнив <code>sudo apt install git</code>. Теперь вы клонируете Java-проект:</p>
   ```
-  <pre><code>git clone https://github.com/JavaDev123/MyFirstApp.git</pre></code>
+  <pre><code>git clone https://github.com/JavaDev123/MyFirstApp.git</code></pre>
   ```
   <p>Это создаёт локальную копию репозитория в папке <code>MyFirstApp</code>. Вы открываете проект в IntelliJ IDEA, редактируете <code>Main.java</code> и фиксируете изменения:</p>
   ```
-  <pre><code>git commit -m "Updated main method"</pre></code>
+  <pre><code>git commit -m "Updated main method"</code></pre>
   ```
   <p>Git сохраняет историю, позволяя вам откатиться, если что-то пойдёт не так.</p>
   <p style="font-style:italic; color:#555;">Git — ваш надёжный помощник для управления кодом локально!</p>
@@ -111,25 +111,25 @@ nav_order: 2
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Задайте имя:</li>
     ```
-    <pre><code>git config --global user.name "Alex Smith"</pre></code>
+    <pre><code>git config --global user.name "Alex Smith"</code></pre>
     ```
     <li>Укажите email, связанный с GitHub:</li>
     ```
-    <pre><code>git config --global user.email "user@example.com"</pre></code>
+    <pre><code>git config --global user.email "user@example.com"</code></pre>
     ```
     <li>Проверьте настройки:</li>
     ```
-    <pre><code>git config --list</pre></code>
+    <pre><code>git config --list</code></pre>
     ```
     <p>Ожидаемый вывод включает:</p>
     ```
-    <pre><code>user.name=Alex Smith</pre></code>
-    <pre><code>user.email=user@example.com</pre></code>
+    <pre><code>user.name=Alex Smith</code></pre>
+    <pre><code>user.email=user@example.com</code></pre>
     ```
   </ol>
   <p><strong>Пример:</strong> Вы настроили Git с именем <code>Alex Smith</code> и email <code>user@example.com</code>. В своём Java-проекте вы редактируете <code>Controller.java</code>, фиксируете изменения:</p>
   ```
-  <pre><code>git commit -m "Fixed bug in API endpoint"</pre></code>
+  <pre><code>git commit -m "Fixed bug in API endpoint"</code></pre>
   ```
   <p>На GitHub в истории коммитов отображается <code>Alex Smith <user@example.com></code>. Коллеги видят, что именно вы исправили баг, и могут обсудить изменения в пул-реквесте.</p>
   <p style="font-style:italic; color:#555;">Настройка Git делает вашу работу видимой и профессиональной!</p>
@@ -147,30 +147,30 @@ nav_order: 2
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Сгенерируйте ключ:</li>
     ```
-    <pre><code>ssh-keygen -t rsa -b 4096 -C "user@example.com"</pre></code>
+    <pre><code>ssh-keygen -t rsa -b 4096 -C "user@example.com"</code></pre>
     ```
     <p>Нажмите Enter для стандартного пути (<code>~/.ssh/id_rsa</code>) и оставьте пароль пустым для простоты.</p>
     <li>Запустите SSH-агент:</li>
     ```
-    eval "$(ssh-agent -s)"
+    <pre><code>eval "$(ssh-agent -s)"</code></pre>
     ```
     <p>Добавьте приватный ключ:</p>
     ```
-    <pre><code>ssh-add ~/.ssh/id_rsa</pre></code>
+    <pre><code>ssh-add ~/.ssh/id_rsa</code></pre>
     ```
     <li>Скопируйте публичный ключ:</li>
     ```
-    <pre><code>cat ~/.ssh/id_rsa.pub</pre></code>
+    <pre><code>cat ~/.ssh/id_rsa.pub</code></pre>
     ```
     <p>Перейдите в <a href="https://github.com/settings/keys" style="color:#007bff; text-decoration:none;">настройки GitHub</a>, нажмите <strong>New SSH key</strong>, вставьте ключ и сохраните.</p>
   </ol>
   <p><strong>Пример:</strong> Вы сгенерировали SSH-ключ и добавили публичный ключ на GitHub. Теперь вы клонируете свой Java-проект через SSH:</p>
   ```
-  <pre><code>git clone git@github.com:JavaDev123/MyFirstApp.git</pre></code>
+  <pre><code>git clone git@github.com:JavaDev123/MyFirstApp.git</code></pre>
   ```
   <p>После изменений в <code>Main.java</code> вы пушите код:</p>
   ```
-  <pre><code>git push origin main</pre></code>
+  <pre><code>git push origin main</code></pre>
   ```
   <p>Без ввода пароля! Это особенно удобно, если вы часто обновляете проект, например, добавляя новые Java-классы.</p>
   <p style="font-style:italic; color:#555;">SSH-ключи ускоряют и защищают вашу работу с GitHub!</p>
@@ -180,7 +180,7 @@ nav_order: 2
   <p><strong>Зачем это нужно?</strong> Командная строка может быть сложной для начинающих, а GitHub Desktop предоставляет интуитивный способ клонировать репозитории, делать коммиты и создавать пул-реквесты. Для Java-разработчиков это удобный инструмент для управления проектами, особенно если вы только начинаете изучать Git.</p>
   <p><strong>Подробности:</strong></p>
   <ul style="padding-left:1.5rem; margin:0.5rem 0;">
-    <li>GitHub Desktop автоматически синхронизируется с вашим аккаунтом GitHub, показывая все ваши репозитории.</li>
+    <li>GitHub Desktop автоматически синхронизируется с вашим аккаунт GitHub, показывая все ваши репозитории.</li>
     <li>Поддерживает базовые операции Git: клонирование, коммиты, пуш, пул-реквесты.</li>
     <li>Для Linux официальной версии нет, но альтернативы (GitKraken, Sublime Merge) предлагают схожий функционал.</li>
   </ul>
