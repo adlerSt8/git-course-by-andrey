@@ -68,13 +68,9 @@ nav_order: 3
     <li>Перейдите в ваш репозиторий на GitHub.</li>
     <li>Нажмите зелёную кнопку <strong>Code</strong> и скопируйте HTTPS-ссылку (например, <code>https://github.com/JavaDev/my-first-repo.git</code>).</li>
     <li>Откройте терминал и выполните:</li>
-    ```
     <pre><code>git clone https://github.com/JavaDev/my-first-repo.git</code></pre>
-    ```
     <li>Перейдите в папку репозитория:</li>
-    ```
     <pre><code>cd my-first-repo</code></pre>
-    ```
   </ol>
   <p><strong>Пример:</strong> Вы клонировали репозиторий <code>my-first-repo</code>, и на вашем компьютере появилась папка <code>my-first-repo</code> с файлом <code>README.md</code>. Вы открываете папку в IntelliJ IDEA, чтобы создать Java-класс, например, <code>Main.java</code>, и начать разработку.</p>
   <p style="font-style:italic; color:#555;">Клонирование соединяет ваш компьютер с GitHub!</p>
@@ -91,21 +87,13 @@ nav_order: 3
   <p><strong>Шаги:</strong></p>
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Создайте файл <code>hello-world.txt</code>:</li>
-    ```
     <pre><code>echo "Hello, Git!" > hello-world.txt</code></pre>
-    ```
     <li>Добавьте файл в индекс:</li>
-    ```
     <pre><code>git add hello-world.txt</code></pre>
-    ```
     <li>Создайте коммит:</li>
-    ```
     <pre><code>git commit -m "Добавлен файл hello-world.txt"</code></pre>
-    ```
     <li>Отправьте изменения на GitHub:</li>
-    ```
     <pre><code>git push origin main</code></pre>
-    ```
   </ol>
   <p><strong>Пример:</strong> Вы создали файл <code>hello-world.txt</code> в репозитории <code>my-first-repo</code>. После выполнения <code>git add</code> и <code>git commit</code> вы зафиксировали изменения с сообщением "Добавлен файл hello-world.txt". Команда <code>git push</code> отправила файл на GitHub, и теперь он виден в веб-интерфейсе. Если вы добавите Java-класс, например, <code>Main.java</code>, процесс будет аналогичным.</p>
   <p style="font-style:italic; color:#555;">Первый коммит — ваш первый шаг к управлению кодом!</p>
@@ -140,50 +128,28 @@ nav_order: 3
   <p><strong>Команды:</strong></p>
   <ul style="padding-left:1.5rem; margin:0.5rem 0;">
     <li><strong>Посмотреть статус репозитория:</strong> Показывает изменённые и индексированные файлы.</li>
-    ```
     <pre><code>git status</code></pre>
-    ```
     <li><strong>Просмотр истории коммитов:</strong> Показывает все коммиты.</li>
-    ```
     <pre><code>git log</code></pre>
-    ```
     <p>Для короткого вывода:</p>
-    ```
     <pre><code>git log --oneline</code></pre>
-    ```
     <li><strong>Отмена изменений в файле (до коммита):</strong> Восстанавливает файл до последнего коммита.</li>
-    ```
     <pre><code>git checkout -- hello-world.txt</code></pre>
-    ```
     <li><strong>Отмена последнего коммита:</strong> Сохраняет изменения в рабочем каталоге.</li>
-    ```
     <pre><code>git reset --soft HEAD~1</code></pre>
-    ```
     <li><strong>Удаление файла из репозитория:</strong> Удаляет файл из индекса, но оставляет локально.</li>
-    ```
     <pre><code>git rm --cached hello-world.txt</code></pre>
-    ```
     <li><strong>Создание нового репозитория локально:</strong> Инициализирует Git в папке.</li>
-    ```
     <pre><code>git init</code></pre>
-    ```
     <p>Добавление удалённого репозитория:</p>
-    ```
     <pre><code>git remote add origin https://github.com/JavaDev/my-first-repo.git</code></pre>
-    ```
   </ul>
   <p><strong>Пример:</strong> Вы случайно изменили <code>Main.java</code>, но хотите отменить изменения:</p>
-  ```
   <pre><code>git checkout -- Main.java</code></pre>
-  ```
   <p>Или вы сделали ошибочный коммит и отменяете его:</p>
-  ```
   <pre><code>git reset --soft HEAD~1</code></pre>
-  ```
   <p>Для проверки статуса вы используете:</p>
-  ```
   <pre><code>git status</code></pre>
-  ```
   <p>Это показывает, что <code>Main.java</code> готов к новому коммиту. Эти команды спасают при работе с Java-проектами.</p>
   <p style="font-style:italic; color:#555;">Дополнительные команды делают Git мощным инструментом!</p>
 </div>

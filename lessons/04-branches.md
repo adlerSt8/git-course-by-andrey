@@ -55,9 +55,7 @@ nav_order: 4
   <p><strong>Шаги:</strong></p>
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Создайте ветку <code>feature-x</code>:</li>
-    ```
     <pre><code>git branch feature-x</code></pre>
-    ```
   </ol>
   <p><strong>Пример:</strong> В репозитории <code>JavaDev/my-first-repo</code> вы создаёте ветку <code>feature-x</code> для разработки новой функции в <code>Main.java</code>. Ветка готова, но вы всё ещё в <code>main</code>, пока не переключитесь.</p>
 
@@ -77,13 +75,9 @@ nav_order: 4
   <p><strong>Шаги:</strong></p>
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Переключитесь на ветку <code>feature-x</code>:</li>
-    ```
     <pre><code>git checkout feature-x</code></pre>
-    ```
     <p>Или, используя современную команду:</p>
-    ```
     <pre><code>git switch feature-x</code></pre>
-    ```
   </ol>
   <p><strong>Пример:</strong> Вы переключились на <code>feature-x</code> в репозитории <code>my-first-repo</code>. Теперь вы можете добавить новый Java-класс, например, <code>FeatureX.java</code>, и изменения сохранятся только в этой ветке.</p>
 
@@ -103,17 +97,11 @@ nav_order: 4
   <p><strong>Шаги:</strong></p>
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Создайте файл <code>feature.txt</code>:</li>
-    ```
     <pre><code>echo "Это новая фича" > feature.txt</code></pre>
-    ```
     <li>Добавьте файл в индекс:</li>
-    ```
     <pre><code>git add feature.txt</code></pre>
-    ```
     <li>Создайте коммит:</li>
-    ```
     <pre><code>git commit -m "Добавлен новый файл для feature-x"</code></pre>
-    ```
   </ol>
   <p><strong>Пример:</strong> В ветке <code>feature-x</code> вы добавили <code>feature.txt</code> и зафиксировали изменения. Если вы создадите Java-класс <code>FeatureX.java</code> с новым методом, он тоже будет сохранён только в этой ветке, пока вы не сольёте её с <code>main</code>.</p>
 
@@ -132,13 +120,9 @@ nav_order: 4
   <p><strong>Шаги:</strong></p>
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Переключитесь на основную ветку:</li>
-    ```
     <pre><code>git checkout main</code></pre>
-    ```
     <li>Слейте изменения из ветки <code>feature-x</code>:</li>
-    ```
     <pre><code>git merge feature-x</code></pre>
-    ```
   </ol>
   <p><strong>Пример:</strong> После того, как вы закончили работу в ветке <code>feature-x</code>, вы сливаете её изменения в <code>main</code> для интеграции новой функции в проект.</p>
 
@@ -150,13 +134,9 @@ nav_order: 4
   <p><strong>Шаги:</strong></p>
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Удалите локальную ветку:</li>
-    ```
     <pre><code>git branch -d feature-x</code></pre>
-    ```
     <li>Удалите удалённую ветку:</li>
-    ```
     <pre><code>git push origin --delete feature-x</code></pre>
-    ```
   </ol>
   <p><strong>Пример:</strong> После слияния ветки <code>feature-x</code> с <code>main</code> вы удаляете её, чтобы проект оставался организованным и понятным.</p>
   <p style="font-style:italic; color:#555;">Удаление ветки — это шаг к поддержанию порядка в проекте!</p>
