@@ -1,0 +1,4 @@
+title: "Основы GitHub для Java-разработчиков"
+description: "Курс по работе с репозиториями, ветками и пул-реквестами"
+theme: jekyll-theme-cayman
+permalink: /:basename/
