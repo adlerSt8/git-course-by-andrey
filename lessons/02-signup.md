@@ -63,37 +63,37 @@ nav_order: 2
       <ul style="padding-left:1.5rem;">
         <li>Для Ubuntu/Debian:</li>
         ```
-        sudo apt update
-        sudo apt install git
+        <pre><code>sudo apt update</pre></code>
+        <pre><code>sudo apt install git</pre></code>
         ```
         <li>Для Fedora:</li>
         ```
-        sudo dnf install git
+        <pre><code>sudo dnf install git</pre></code>
         ```
       </ul>
     </li>
     <li><strong>MacOS:</strong> Установите Git через Homebrew:</li>
     ```
-    brew install git
+    <pre><code>brew install git</pre></code>
     ```
     <p>Если Homebrew не установлен, выполните:</p>
     ```
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    <pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</pre></code>
     ```
     <p>Или скачайте Git с <a href="https://git-scm.com/download/mac" style="color:#007bff; text-decoration:none;">официального сайта</a>.</p>
   </ul>
   <p>После установки проверьте версию:</p>
   ```
-  git --version
+  <pre><code>git --version</pre></code>
   ```
   <p>Ожидаемый вывод: <code>git version 2.39.2</code> (или новее).</p>
   <p><strong>Пример:</strong> Вы установили Git на Ubuntu, выполнив <code>sudo apt install git</code>. Теперь вы клонируете Java-проект:</p>
   ```
-  git clone https://github.com/JavaDev123/MyFirstApp.git
+  <pre><code>git clone https://github.com/JavaDev123/MyFirstApp.git</pre></code>
   ```
   <p>Это создаёт локальную копию репозитория в папке <code>MyFirstApp</code>. Вы открываете проект в IntelliJ IDEA, редактируете <code>Main.java</code> и фиксируете изменения:</p>
   ```
-  git commit -m "Updated main method"
+  <pre><code>git commit -m "Updated main method"</pre></code>
   ```
   <p>Git сохраняет историю, позволяя вам откатиться, если что-то пойдёт не так.</p>
   <p style="font-style:italic; color:#555;">Git — ваш надёжный помощник для управления кодом локально!</p>
@@ -111,25 +111,25 @@ nav_order: 2
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Задайте имя:</li>
     ```
-    git config --global user.name "Alex Smith"
+    <pre><code>git config --global user.name "Alex Smith"</pre></code>
     ```
     <li>Укажите email, связанный с GitHub:</li>
     ```
-    git config --global user.email "user@example.com"
+    <pre><code>git config --global user.email "user@example.com"</pre></code>
     ```
     <li>Проверьте настройки:</li>
     ```
-    git config --list
+    <pre><code>git config --list</pre></code>
     ```
     <p>Ожидаемый вывод включает:</p>
     ```
-    user.name=Alex Smith
-    user.email=user@example.com
+    <pre><code>user.name=Alex Smith</pre></code>
+    <pre><code>user.email=user@example.com</pre></code>
     ```
   </ol>
   <p><strong>Пример:</strong> Вы настроили Git с именем <code>Alex Smith</code> и email <code>user@example.com</code>. В своём Java-проекте вы редактируете <code>Controller.java</code>, фиксируете изменения:</p>
   ```
-  git commit -m "Fixed bug in API endpoint"
+  <pre><code>git commit -m "Fixed bug in API endpoint"</pre></code>
   ```
   <p>На GitHub в истории коммитов отображается <code>Alex Smith <user@example.com></code>. Коллеги видят, что именно вы исправили баг, и могут обсудить изменения в пул-реквесте.</p>
   <p style="font-style:italic; color:#555;">Настройка Git делает вашу работу видимой и профессиональной!</p>
@@ -147,7 +147,7 @@ nav_order: 2
   <ol style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>Сгенерируйте ключ:</li>
     ```
-    ssh-keygen -t rsa -b 4096 -C "user@example.com"
+    <pre><code>ssh-keygen -t rsa -b 4096 -C "user@example.com"</pre></code>
     ```
     <p>Нажмите Enter для стандартного пути (<code>~/.ssh/id_rsa</code>) и оставьте пароль пустым для простоты.</p>
     <li>Запустите SSH-агент:</li>
@@ -156,21 +156,21 @@ nav_order: 2
     ```
     <p>Добавьте приватный ключ:</p>
     ```
-    ssh-add ~/.ssh/id_rsa
+    <pre><code>ssh-add ~/.ssh/id_rsa</pre></code>
     ```
     <li>Скопируйте публичный ключ:</li>
     ```
-    cat ~/.ssh/id_rsa.pub
+    <pre><code>cat ~/.ssh/id_rsa.pub</pre></code>
     ```
     <p>Перейдите в <a href="https://github.com/settings/keys" style="color:#007bff; text-decoration:none;">настройки GitHub</a>, нажмите <strong>New SSH key</strong>, вставьте ключ и сохраните.</p>
   </ol>
   <p><strong>Пример:</strong> Вы сгенерировали SSH-ключ и добавили публичный ключ на GitHub. Теперь вы клонируете свой Java-проект через SSH:</p>
   ```
-  git clone git@github.com:JavaDev123/MyFirstApp.git
+  <pre><code>git clone git@github.com:JavaDev123/MyFirstApp.git</pre></code>
   ```
   <p>После изменений в <code>Main.java</code> вы пушите код:</p>
   ```
-  git push origin main
+  <pre><code>git push origin main</pre></code>
   ```
   <p>Без ввода пароля! Это особенно удобно, если вы часто обновляете проект, например, добавляя новые Java-классы.</p>
   <p style="font-style:italic; color:#555;">SSH-ключи ускоряют и защищают вашу работу с GitHub!</p>
