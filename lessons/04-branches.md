@@ -2,6 +2,7 @@
 layout: default
 title: Работа с ветками
 permalink: /lessons/04-branches/
+nav_order: 4
 ---
 
 ## Цель урока
@@ -60,4 +61,13 @@ public class HelloWorld {
 
 ---
 
-[← Предыдущий урок](03-create-repo/) • [Главная](../) • [Следующий урок →](05-pull-requests/)
+<div class="lesson-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← Назад</a>
+  {% endif %}
+  
+  {% if page.next %}
+    <a href="{{ page.next.url }}">Вперёд →</a>
+  {% endif %}
+</div>
+

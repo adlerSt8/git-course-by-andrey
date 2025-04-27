@@ -2,6 +2,7 @@
 layout: default
 title: Использование GitHub Desktop
 permalink: /lessons/08-github-desktop/
+nav_order: 8
 ---
 
 ## Цель урока
@@ -79,4 +80,12 @@ public class Welcome {
 
 ---
 
-[← Предыдущий урок](07-faq/) • [Главная](../)
+<div class="lesson-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← Назад</a>
+  {% endif %}
+  
+  {% if page.next %}
+    <a href="{{ page.next.url }}">Вперёд →</a>
+  {% endif %}
+</div>

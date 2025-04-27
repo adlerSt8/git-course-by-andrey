@@ -2,6 +2,7 @@
 layout: default
 title: Практическое задание: Командный Java-проект
 permalink: /lessons/06-team-project/
+nav_order: 6
 ---
 
 ## Цель урока
@@ -78,4 +79,13 @@ public class Calculator {
 
 ---
 
-[← Предыдущий урок](05-pull-requests/) • [Главная](../) • [Следующий урок →](07-faq/)
+<div class="lesson-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← Назад</a>
+  {% endif %}
+  
+  {% if page.next %}
+    <a href="{{ page.next.url }}">Вперёд →</a>
+  {% endif %}
+</div>
+

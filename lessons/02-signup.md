@@ -2,6 +2,7 @@
 layout: default
 title: Регистрация и настройка аккаунта
 permalink: /lessons/02-signup/
+nav_order: 2
 ---
 
 ## Цель урока
@@ -46,4 +47,13 @@ permalink: /lessons/02-signup/
 
 ---
 
-[← Предыдущий урок](01-intro/) • [Главная](../) • [Следующий урок →](03-create-repo/)
+<div class="lesson-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← Назад</a>
+  {% endif %}
+  
+  {% if page.next %}
+    <a href="{{ page.next.url }}">Вперёд →</a>
+  {% endif %}
+</div>
+

@@ -2,6 +2,7 @@
 layout: default
 title: Создание репозитория и первые коммиты
 permalink: /lessons/03-create-repo/
+nav_order: 3
 ---
 
 ## Цель урока
@@ -53,4 +54,13 @@ public class HelloWorld {
 
 ---
 
-[← Предыдущий урок](02-signup/) • [Главная](../) • [Следующий урок →](04-branches/)
+<div class="lesson-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← Назад</a>
+  {% endif %}
+  
+  {% if page.next %}
+    <a href="{{ page.next.url }}">Вперёд →</a>
+  {% endif %}
+</div>
+

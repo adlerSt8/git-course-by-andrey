@@ -2,6 +2,7 @@
 layout: default
 title: Вопросы и итоги
 permalink: /lessons/07-faq/
+nav_order: 7
 ---
 
 ## Цель урока
@@ -41,4 +42,13 @@ GitHub покажет конфликтующие файлы. Нажмите **Re
 
 ---
 
-[← Предыдущий урок](06-team-project/) • [Главная](../)
+<div class="lesson-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← Назад</a>
+  {% endif %}
+  
+  {% if page.next %}
+    <a href="{{ page.next.url }}">Вперёд →</a>
+  {% endif %}
+</div>
+

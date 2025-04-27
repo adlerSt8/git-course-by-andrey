@@ -2,6 +2,7 @@
 layout: default
 title: Пул-реквесты и совместная работа
 permalink: /lessons/05-pull-requests/
+nav_order: 5
 ---
 
 ## Цель урока
@@ -51,4 +52,13 @@ permalink: /lessons/05-pull-requests/
 
 ---
 
-[← Предыдущий урок](04-branches/) • [Главная](../) • [Следующий урок →](06-team-project/)
+<div class="lesson-nav">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}">← Назад</a>
+  {% endif %}
+  
+  {% if page.next %}
+    <a href="{{ page.next.url }}">Вперёд →</a>
+  {% endif %}
+</div>
+
