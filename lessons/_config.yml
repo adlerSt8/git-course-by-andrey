@@ -1,4 +1,5 @@
 title: "Основы GitHub для Java-разработчиков"
-description: "Курс по работе с репозиториями, ветками и пул-реквестами"
-theme: jekyll-theme-cayman
+description: "Мини-курс по GitHub для Java"
+baseurl: "/git-course-by-andrey" 
+url: "https://adlerst8.github.io"
 permalink: /:basename/
