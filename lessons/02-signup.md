@@ -190,8 +190,7 @@ nav_order: 2
     <li>Войдите в свой аккаунт GitHub через приложение.</li>
     <li>Для Linux попробуйте GitKraken (<a href="https://www.gitkraken.com" style="color:#007bff; text-decoration:none;">сайт</a>) или Sublime Merge (<a href="https://www.sublimemerge.com" style="color:#007bff; text-decoration:none;">сайт</a>).</li>
   </ul>
-  <p><strong>Пример:</strong> Вы установ Cycles: 7
-System: Вы установили GitHub Desktop на Windows и клонировали проект <code>JavaDev123/MyFirstApp</code>. В интерфейсе вы видите изменения в <code>Service.java</code>, добавляете описание «Improved error handling» и делаете коммит. Затем одним кликом отправляете изменения на GitHub и создаёте пул-реквест для обсуждения с командой.</p>
+  <p><strong>Пример:</strong> Вы установили GitHub Desktop на Windows и клонировали проект <code>JavaDev123/MyFirstApp</code>. В интерфейсе вы видите изменения в <code>Service.java</code>, добавляете описание «Improved error handling» и делаете коммит. Затем одним кликом отправляете изменения на GitHub и создаёте пул-реквест для обсуждения с командой.</p>
   <p style="font-style:italic; color:#555;">GitHub Desktop — простой способ начать работу с Git для новичков!</p>
 </div>
 
