@@ -102,7 +102,7 @@ nav_order: 6
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div style="text-align:center; margin: 3rem 0;">
-  <h1 style="font-size:3rem;">👥 Командная работа. Исправление 4</h1>
+  <h1 style="font-size:3rem;">👥 Командная работа. Исправление 5</h1>
   <p style="color:#333; font-size:1.5rem;">Создаём викторину на Java вместе!</p>
 </div>
 
@@ -167,19 +167,17 @@ nav_order: 6
     <p>Замените <code>alex</code> на своё имя. Теперь вы работаете в ветке <code>question-alex</code>, а основная ветка <code>main</code> остаётся нетронутой.</p>
     <li><i class="fas fa-file-alt step-icon"></i> <strong>Откройте <code>Quiz.java</code>:</strong> Найдите файл <code>Quiz.java</code> в папке <code>team-quiz</code>. Откройте его в редакторе кода (например, IntelliJ IDEA или Notepad++). Изначально он выглядит так:</li>
     <pre>import java.util.ArrayList;
-
-public class Quiz {
-    private ArrayList<Question> questions = new ArrayList<>();
-    private int score = 0;
-
-    public Quiz() {
-        // Здесь добавляем вопросы
-    }
-
-    public ArrayList<Question> getQuestions() { return questions; }
-    public int getScore() { return score; }
-    public void incrementScore() { score++; }
-}</pre>
+        public class Quiz {
+        private ArrayList<Question> questions = new ArrayList<>();
+        private int score = 0;
+        public Quiz() {
+            // Здесь добавляем вопросы
+        }
+        public ArrayList<Question> getQuestions() { return questions; }
+        public int getScore() { return score; }
+        public void incrementScore() { score++; }
+}
+    </pre>
     <p>Этот код — основа викторины. В конструкторе <code>public Quiz()</code> вы добавите свой вопрос.</p>
     <li><i class="fas fa-plus-circle step-icon"></i> <strong>Добавьте вопрос:</strong> В конструкторе <code>public Quiz()</code> вставьте код для вашего вопроса. Например, Alex добавляет:</li>
     <pre>questions.add(new Question(
