@@ -179,6 +179,7 @@ public class Quiz {
     public ArrayList<Question> getQuestions() { return questions; }
     public int getScore() { return score; }
     public void incrementScore() { score++; }
+}</pre>
     <p>Этот код — основа викторины. В конструкторе <code>public Quiz()</code> вы добавите свой вопрос.</p>
     <li><i class="fas fa-plus-circle step-icon"></i> <strong>Добавьте вопрос:</strong> В конструкторе <code>public Quiz()</code> вставьте код для вашего вопроса. Например, Alex добавляет:</li>
     <pre>questions.add(new Question(
