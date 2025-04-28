@@ -54,7 +54,7 @@ nav_order: 5
     line-height: 1.8;
     font-size: 1.4rem;
     color: #333;
-    max-width: 1400px;  /* Добавили максимальную ширину */
+    max-width: 2000px;  /* Добавили максимальную ширину */
     width: 95%;   
   }
   
@@ -93,7 +93,7 @@ nav_order: 5
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div style="text-align:center; margin: 3rem 0;">
-  <h1 style="font-size:3rem;">🤝 Пул-реквесты и совместная работа. Редакция 2</h1>
+  <h1 style="font-size:3rem;">🤝 Пул-реквесты и совместная работа. Редакция 3</h1>
   <p style="color:#333; font-size:1.5rem;">Учимся работать в команде через GitHub</p>
 </div>
 
