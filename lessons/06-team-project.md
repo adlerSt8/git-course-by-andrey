@@ -77,7 +77,7 @@ nav_order: 6
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div style="text-align:center; margin: 3rem 0;">
-  <h1 style="font-size:3rem;">👥 Командная работа. Измениение 1</h1>
+  <h1 style="font-size:3rem;">👥 Командная работа. Измениение 2</h1>
   <p style="color:#555; font-size:1.5rem;">Создаём викторину на Java вместе!</p>
 </div>
 
@@ -117,7 +117,7 @@ nav_order: 6
   <p><strong>Что нужно знать:</strong></p>
   <ul style="padding-left:1.5rem; margin:0.5rem 0;">
     <li>📝 Вопрос добавляется в метод <code>addQuestion</code> в <code>Quiz.java</code>.</li>
-    <li>🌿 Ваша ветка будет называться <code>question-<ваше_имя></code> (например, <code>question-alex</code>).</li>
+    <li>🌿 Ваша ветка будет называться <code>question-<ваше_имя> (например, question-alex</code>).</li>
     <li>❓ Вопрос — это строка с текстом вопроса, 4 варианта ответа и правильный ответ (номер 1–4).</li>
   </ul>
   <p><strong>Как это сделать:</strong></p>
