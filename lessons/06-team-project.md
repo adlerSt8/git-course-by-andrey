@@ -6,6 +6,7 @@ nav_order: 6
 ---
 
 <style>
+  /* Основной стиль для блока с кодом */
   pre {
     background: #e9ecef;
     padding: 1rem;
@@ -16,6 +17,7 @@ nav_order: 6
     overflow-x: auto;
     margin: 1.5rem 0;
   }
+  /* Стиль для тега <code> */
   code {
     background: #e9ecef;
     padding: 0.3rem 0.5rem;
@@ -23,6 +25,7 @@ nav_order: 6
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
   }
+  /* Стиль для клавиш */
   kbd {
     background: #f1f1f1;
     padding: 0.3rem 0.5rem;
@@ -31,10 +34,12 @@ nav_order: 6
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
   }
+  /* Иконки шагов */
   .step-icon {
     margin-right: 0.5rem;
     font-size: 1.5rem;
   }
+  /* Стиль контейнера для текста */
   .container {
     background: #f8f9fa;
     border-radius: 8px;
@@ -44,12 +49,14 @@ nav_order: 6
     line-height: 1.8;
     font-size: 1.4rem;
   }
+  /* Стили для навигации */
   nav a {
     transition: background 0.2s;
   }
   nav a:hover {
     background: #0056b3;
   }
+  /* Кнопка */
   .btn {
     display: inline-block;
     background-color: #0056b3;
@@ -63,6 +70,7 @@ nav_order: 6
   .btn:hover {
     background-color: #003d7a;
   }
+  /* Адаптивность для мобильных устройств */
   @media (max-width: 600px) {
     pre, code, kbd {
       font-size: 1.1rem;
@@ -77,7 +85,7 @@ nav_order: 6
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div style="text-align:center; margin: 3rem 0;">
-  <h1 style="font-size:3rem;">👥 Командная работа. Измениение 2</h1>
+  <h1 style="font-size:3rem;">👥 Командная работа. Изменение 3</h1>
   <p style="color:#555; font-size:1.5rem;">Создаём викторину на Java вместе!</p>
 </div>
 
