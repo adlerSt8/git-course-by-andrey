@@ -113,7 +113,7 @@ nav_order: 6
     <li><i class="fas fa-code-branch step-icon"></i> <strong>Создайте ветку:</strong> Команда <kbd>git checkout -b</kbd> делает новую ветку и переключает вас на неё. Это ваш черновик для вопроса.</li>
     <pre>git checkout -b question-alex</pre>
     <p>Замените <code>alex</code> на своё имя. Теперь вы работаете в ветке <code>question-alex</code>, не трогая главную ветку <code>main</code>.</p>
-    <li><i class="fas fa-file-alt step-icon"></i> <strong>Откройте <code>Quiz.java</code>:</strong> Найдите файл в папке <code>team-quiz</code>. Он выглядит так:</li>
+    <li><i class="fas fa-file-alt step-icon"></i> <strong>Откройте <code>Quiz.java</code>:</strong> Найдите файл в папке <code>team-quiz</code>. Изначально он выглядит так:</li>
     <pre>import java.util.ArrayList;
 
 public class Quiz {
@@ -128,7 +128,14 @@ public class Quiz {
     public int getScore() { return score; }
     public void incrementScore() { score++; }
 }</pre>
+    <p>Этот код — основа викторины. В конструкторе <code>public Quiz()</code> вы добавите свой вопрос.</p>
     <li><i class="fas fa-plus-circle step-icon"></i> <strong>Добавьте вопрос:</strong> В конструкторе <code>public Quiz()</code> вставьте свой вопрос. Например, Alex добавляет:</li>
+    <pre>questions.add(new Question(
+    "Что такое JVM?",
+    new String[]{"Виртуальная машина", "Компилятор", "Библиотека", "Фреймворк"},
+    1
+));</pre>
+    <p>После добавления ваш <code>Quiz.java</code> будет выглядеть так:</p>
     <pre>import java.util.ArrayList;
 
 public class Quiz {
@@ -148,12 +155,12 @@ public class Quiz {
     public int getScore() { return score; }
     public void incrementScore() { score++; }
 }</pre>
-    <p>Что происходит:
-      <ul style="padding-left:1.5rem;">
-        <li><code>questions.add</code> — добавляет ваш вопрос в список викторины.</li>
-        <li><code>new Question</code> — создаёт вопрос: текст, 4 варианта, правильный ответ (1 — "Виртуальная машина").</li>
-      </ul>
-      Такой формат нужен, чтобы викторина показала ваш вопрос игрокам.</p>
+    <p><strong>Что происходит:</strong></p>
+    <ul style="padding-left:1.5rem;">
+      <li><code>questions.add</code> — добавляет ваш вопрос в список викторины.</li>
+      <li><code>new Question</code> — создаёт вопрос: текст, 4 варианта, правильный ответ (1 — "Виртуальная машина").</li>
+    </ul>
+    <p>Этот формат нужен, чтобы викторина показала ваш вопрос игрокам.</p>
     <li><i class="fas fa-save step-icon"></i> <strong>Сохраните изменения:</strong> Команда <kbd>git add</kbd> говорит Git: "Я хочу сохранить <code>Quiz.java</code>".</li>
     <pre>git add Quiz.java</pre>
     <li><i class="fas fa-comment step-icon"></i> <strong>Опишите изменения:</strong> Команда <kbd>git commit</kbd> сохраняет ваш вопрос с заметкой, что вы сделали.</li>
