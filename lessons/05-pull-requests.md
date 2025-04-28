@@ -91,7 +91,7 @@ nav_order: 5
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div style="text-align:center; margin: 3rem 0;">
-  <h1 style="font-size:3rem;">🤝 Пул-реквесты и совместная работа. Редакция 1</h1>
+  <h1 style="font-size:3rem;">🤝 Пул-реквесты и совместная работа. Редакция 2</h1>
   <p style="color:#333; font-size:1.5rem;">Учимся работать в команде через GitHub</p>
 </div>
 
@@ -204,16 +204,48 @@ nav_order: 5
   </ul>
   
   <h3>Типы слияния:</h3>
-  <ol>
-    <li><strong>Merge commit:</strong> Сохраняет историю всех коммитов</li>
-    <pre><code>git merge --no-ff feature-user-login</code></pre>
-    
-    <li><strong>Squash and merge:</strong> Объединяет все коммиты PR в один</li>
-    <p>Подходит для небольших изменений</p>
-    
-    <li><strong>Rebase and merge:</strong> Перемещает ваши коммиты поверх основной ветки</li>
-    <p>Для опытных пользователей Git</p>
-  </ol>
+<ol>
+  <li><strong>Merge commit:</strong> Сохраняет историю всех коммитов</li>
+  <pre><code>git merge --no-ff feature-user-login</code></pre>
+  
+  <li><strong>Squash and merge:</strong> Объединяет все коммиты PR в один (для небольших изменений)</li>
+  <pre><code># 1. Переключитесь на основную ветку
+git checkout main
+
+# 2. Выполните squash-merge
+git merge --squash feature-user-login
+
+# 3. Создайте новый коммит (все изменения из PR станут одним коммитом)
+git commit -m "Добавлена аутентификация пользователя"
+
+# 4. Отправьте изменения
+git push origin main</code></pre>
+  <p><i class="fas fa-check-circle"></i> <strong>Преимущества:</strong><br>
+  - Чистая история коммитов<br>
+  - Подходит для мелких исправлений (1-3 файла)</p>
+  
+  <p><i class="fas fa-clock"></i> <strong>Когда использовать:</strong><br>
+  - При исправлении опечаток<br>
+  - Для небольших багфиксов<br>
+  - Когда отдельные коммиты PR не имеют самостоятельной ценности</p>
+
+  <div style="background:#f8f9fa; border-left:4px solid #007bff; padding:1rem; margin:1rem 0; border-radius:0 4px 4px 0;">
+  <h4 style="margin-top:0;"><i class="fas fa-comment-dots"></i> Пример хорошего сообщения для squash-коммита:</h4>
+  <pre><code>feat: Добавлена аутентификация пользователя
+
+- Реализован метод loginUser() 
+- Добавлена валидация пароля
+- Написаны базовые тесты
+- Обновлена документация</code></pre>
+  <p><i class="fas fa-lightbulb"></i> <strong>Совет:</strong> Используйте <a href="https://www.conventionalcommits.org/" style="color:#007bff;">Conventional Commits</a> для стандартизации сообщений.</p>
+</div>
+  
+  <li><strong>Rebase and merge:</strong> Перемещает ваши коммиты поверх основной ветки</li>
+  <pre><code>git checkout feature-user-login
+git rebase main
+git checkout main
+git merge feature-user-login</code></pre>
+</ol>
   
   <div style="background:#f8f9fa; border:1px solid #ddd; border-radius:6px; padding:1rem; margin:1.5rem 0;">
     <h4 style="margin-top:0;">Чеклист перед мержем:</h4>
