@@ -166,21 +166,23 @@ nav_order: 6
     <pre><kbd>git checkout -b question-alex</kbd></pre>
     <p>Замените <code>alex</code> на своё имя. Теперь вы работаете в ветке <code>question-alex</code>, а основная ветка <code>main</code> остаётся нетронутой.</p>
     <li><i class="fas fa-file-alt step-icon"></i> <strong>Откройте <code>Quiz.java</code>:</strong> Найдите файл <code>Quiz.java</code> в папке <code>team-quiz</code>. Откройте его в редакторе кода (например, IntelliJ IDEA или Notepad++). Изначально он выглядит так:</li>
-    <pre>import java.util.ArrayList;
+
+<pre><code>import java.util.ArrayList;
 
 public class Quiz {
-    private ArrayList<Question> questions = new ArrayList<>();
+    private ArrayList&lt;Question&gt; questions = new ArrayList&lt;&gt;();
     private int score = 0;
 
     public Quiz() {
         // Здесь добавляем вопросы
     }
 
-    public ArrayList<Question> getQuestions() { return questions; }
+    public ArrayList&lt;Question&gt; getQuestions() { return questions; }
     public int getScore() { return score; }
     public void incrementScore() { score++; }
-}</pre>
-    <p>Этот код — основа викторины. В конструкторе <code>public Quiz()</code> вы добавите свой вопрос.</p>
+}</code></pre>
+
+<p>Этот код — основа викторины. В конструкторе <code>public Quiz()</code> вы добавите свой вопрос.</p>
     <li><i class="fas fa-plus-circle step-icon"></i> <strong>Добавьте вопрос:</strong> В конструкторе <code>public Quiz()</code> вставьте код для вашего вопроса. Например, Alex добавляет:</li>
     <pre>questions.add(new Question(
     "Какой язык программирования используется для Android?",
