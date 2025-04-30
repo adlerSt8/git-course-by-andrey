@@ -54,8 +54,8 @@ nav_order: 7
     line-height: 1.8;
     font-size: 1.4rem;
     color: #333;
-    max-width: 2000px;
-    width: 95%;   
+    max-width: 2500px;
+    width: 99%;   
   }
   
   /* Стили для навигации */
