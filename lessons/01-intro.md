@@ -161,7 +161,7 @@ nav_order: 1
         <li><strong>Staged</strong> - изменения подготовлены для фиксации</li>
         <li><strong>Committed</strong> - данные безопасно сохранены в локальной БД</li>
       </ol>
-      <pre><code>git add <file> # Переводит в staged
+      <pre><code>git add "file" # Переводит в staged
 git commit    # Фиксирует изменения</code></pre>
     </div>
     <div style="flex:1;">
