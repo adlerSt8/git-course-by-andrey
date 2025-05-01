@@ -88,7 +88,7 @@ nav_order: 1
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <div style="text-align:center; margin: 3rem 0;">
-  <h1 style="font-size:3rem;">📜 Эволюция Git: от концепции к стандарту</h1>
+  <h1 style="font-size:3rem;">📜 Эволюция Git: от концепции к стандарту. Ред 1</h1>
   <p style="color:#333; font-size:1.5rem;">Как проблемы BitKeeper привели к созданию самой популярной системы контроля версий</p>
 </div>
 
