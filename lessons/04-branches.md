@@ -141,7 +141,7 @@ nav_order: 4
     
   <li><i class="fas fa-exchange-alt step-icon"></i> <strong>Переключение между ветками:</strong></li>
     <pre><kbd>git checkout main</kbd> <span style="color:#666;"># Вернуться в main</span></pre>
-    <pre><kbd>git switch feature-user-login</kbd> <span style="color:#666;"># Современный вариант (Git 2.23+)</span></pre>
+    <pre><kbd>git switch question-alex</kbd> <span style="color:#666;"># Современный вариант (Git 2.23+)</span></pre>
   </ol>
   
   <div style="background:#e6ffe6; border-left:4px solid #28a745; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
@@ -158,13 +158,13 @@ hotfix/[срочное-исправление] # Для критичных ис�
     <li><i class="fas fa-code-branch step-icon"></i> <strong>Переключитесь на основную ветку:</strong></li>
     <pre><kbd>git checkout main</kbd></pre>
     
-    <li><i class="fas fa-sync-alt step-icon"></i> <strong>Получите свежие изменения:</strong></li>
+  <li><i class="fas fa-sync-alt step-icon"></i> <strong>Получите свежие изменения:</strong></li>
     <pre><kbd>git pull origin main</kbd></pre>
     
-    <li><i class="fas fa-merge step-icon"></i> <strong>Выполните слияние:</strong></li>
-    <pre><kbd>git merge feature-user-login</kbd></pre>
+  <li><i class="fas fa-merge step-icon"></i> <strong>Выполните слияние:</strong></li>
+    <pre><kbd>git merge question-alex</kbd></pre>
     
-    <li><i class="fas fa-cloud-upload-alt step-icon"></i> <strong>Отправьте изменения:</strong></li>
+   <li><i class="fas fa-cloud-upload-alt step-icon"></i> <strong>Отправьте изменения:</strong></li>
     <pre><kbd>git push origin main</kbd></pre>
   </ol>
   
@@ -189,8 +189,8 @@ hotfix/[срочное-исправление] # Для критичных ис�
   <h3>Когда и как удалять ветки</h3>
   <p>После успешного слияния ненужные ветки можно удалить:</p>
   
-  <pre><kbd>git branch -d feature-user-login</kbd> <span style="color:#666;"># Локальное удаление</span></pre>
-  <pre><kbd>git push origin --delete feature-user-login</kbd> <span style="color:#666;"># Удаление на сервере</span></pre>
+  <pre><kbd>git branch -d question-alex</kbd> <span style="color:#666;"># Локальное удаление</span></pre>
+  <pre><kbd>git push origin --delete question-alex</kbd> <span style="color:#666;"># Удаление на сервере</span></pre>
   
   <div style="background:#fff8e6; border-left:4px solid #ffc107; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
     <p><strong>Важно:</strong> Убедитесь, что все изменения из ветки перенесены в основную ветку перед удалением!</p>
