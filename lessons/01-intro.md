@@ -133,6 +133,12 @@ nav_order: 1
       <div class="timeline-date">2005</div>
       <div class="timeline-content">
         <p><strong>Линус Торвальдс</strong>, создатель Linux, начинает разработку Git из-за проблем с проприетарной системой BitKeeper</p>
+        <p><strong>Линус Торвальдс</strong>, создатель Linux, начинает разработку Git из-за проблем с проприетарной системой BitKeeper:</p>
+            <ul>
+                <li>BitKeeper был бесплатным для open-source проектов, но оставался закрытым и частным</li>
+                <li>В 2005 году разработчики ядра Linux потеряли бесплатный доступ из-за конфликта с владельцем BitKeeper</li>
+                <li>Нужна была альтернатива: свободная, быстрая и надёжная</li>
+            </ul>
       </div>
     </div>
     <div class="timeline-item">
