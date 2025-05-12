@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Система контроля версий Git
-permalink: /lessons/01-intro/
+permalink: /lessons/01-git-intro/
 nav_order: 1
 ---
 
@@ -17,7 +17,7 @@ nav_order: 1
     overflow-x: auto;
     margin: 1.5rem 0;
   }
-  
+
   /* Стиль контейнера для текста */
   .container {
     background: #f8f9fa;
@@ -31,7 +31,7 @@ nav_order: 1
     max-width: 2000px;
     width: 95%;   
   }
-  
+
   /* Стили для навигации */
   .nav-button {
     text-decoration: none;
@@ -42,7 +42,7 @@ nav_order: 1
     font-size: 1.4rem;
     transition: background 0.2s;
   }
-  
+
   .nav-button:hover {
     background: #0056b3;
   }
@@ -92,11 +92,11 @@ nav_order: 1
 
 <div class="container">
   <h2 style="font-size:2rem;"><i class="fas fa-history step-icon"></i> Истоки контроля версий</h2>
-  
+
   <div style="background:#e6f3ff; border-left:4px solid #007bff; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
     <p><strong>Интересный факт:</strong> Первые системы контроля версий появились еще в 1970-х годах, задолго до Git!</p>
   </div>
-  
+
   <p>Концепция контроля версий возникла из необходимости:</p>
   <ul>
     <li>Отслеживать изменения в коде</li>
@@ -126,7 +126,7 @@ nav_order: 1
   </div>
 
   <h2 style="font-size:2rem;"><i class="fas fa-birthday-cake step-icon"></i> Рождение Git</h2>
-  
+
   <div class="timeline">
     <div class="timeline-item">
       <div class="timeline-dot"></div>
@@ -163,7 +163,7 @@ nav_order: 1
   </div>
 
   <h2 style="font-size:2rem;"><i class="fas fa-cogs step-icon"></i> Как работает Git?</h2>
-  
+
   <div style="display:flex; align-items:center; margin:1.5rem 0;">
     <div style="flex:1; padding-right:2rem;">
       <p>Git кардинально отличается от предыдущих систем контроля версий своей <strong>распределенной архитектурой</strong>:</p>
@@ -180,11 +180,11 @@ nav_order: 1
   </div>
 
   <h2 style="font-size:2rem;"><i class="fas fa-chart-line step-icon"></i> Эволюция Git</h2>
-  
+
   <div style="background:#fff8e6; border-left:4px solid #ffc107; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
     <p><strong>Сегодня Git</strong> используется 90% разработчиков и стал стандартом де-факто в индустрии</p>
   </div>
-  
+
   <h3>Ключевые этапы развития:</h3>
   <ul>
     <li><strong>2008:</strong> Появление GitHub - социальной платформы для Git</li>
@@ -195,9 +195,9 @@ nav_order: 1
   </ul>
 
   <h2 style="font-size:2rem;"><i class="fab fa-github step-icon"></i> GitHub и другие платформы</h2>
-  
+
   <p>Хотя Git можно использовать самостоятельно, платформы хостинга делают совместную работу удобнее:</p>
-  
+
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
     <div style="background:#fff; border-radius:8px; padding:1.5rem; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
       <h4 style="margin-top:0;"><i class="fab fa-github" style="color:#24292e;"></i> GitHub</h4>
@@ -212,7 +212,7 @@ nav_order: 1
       <p>Решение от Atlassian с интеграцией Jira</p>
     </div>
   </div>
-  
+
   <div style="background:#e6ffe6; border-left:4px solid #28a745; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
     <p><strong>Важно:</strong> Git ≠ GitHub. Git - это инструмент, а GitHub - сервис для хостинга Git-репозиториев с дополнительными функциями.</p>
   </div>
@@ -221,4 +221,3 @@ nav_order: 1
 <nav style="display:flex; justify-content:space-between; margin:3rem 0;">
   <a href="{{ '/' | relative_url }}" class="nav-button">← Оглавление</a>
   <a href="{{ '/lessons/02-git-basics/' | relative_url }}" class="nav-button">Основы Git →</a>
-</nav>
