@@ -133,7 +133,6 @@ nav_order: 1
       <div class="timeline-date">2005</div>
       <div class="timeline-content">
         <p><strong>Линус Торвальдс</strong>, создатель Linux, начинает разработку Git из-за проблем с проприетарной системой BitKeeper</p>
-        <p><strong>Линус Торвальдс</strong>, создатель Linux, начинает разработку Git из-за проблем с проприетарной системой BitKeeper:</p>
             <ul>
                 <li>BitKeeper был бесплатным для open-source проектов, но оставался закрытым и частным</li>
                 <li>В 2005 году разработчики ядра Linux потеряли бесплатный доступ из-за конфликта с владельцем BitKeeper</li>
@@ -179,6 +178,20 @@ nav_order: 1
         <li>Используется хеширование SHA-1 для идентификации объектов</li>
         <li>Три основных состояния файлов: modified, staged, committed</li>
       </ul>
+      <h3>Основные состояния файлов в Git</h3>
+        <p>Каждый файл в Git может находиться в одном из трёх состояний:</p>
+          <ul>
+            <li><strong>Modified (изменён)</strong> — файл был изменён, но Git ещё не отслеживает это изменение для коммита</li>
+            <li><strong>Staged (проиндексирован)</strong> — файл подготовлен к коммиту. Git знает, что именно ты собираешься зафиксировать</li>
+            <li><strong>Committed (зафиксирован)</strong> — изменения сохранены в локальной базе Git (репозитории)</li>
+          </ul>
+
+<p>Простой жизненный цикл файла:</p>
+<ol>
+  <li>Ты меняешь файл → он становится <strong>Modified</strong></li>
+  <li>Ты добавляешь его в индекс через <code>git add</code> → он становится <strong>Staged</strong></li>
+  <li>Ты выполняешь <code>git commit</code> → файл становится <strong>Committed</strong></li>
+</ol>
     </div>
     <div style="flex:1;">
       <img src="https://git-scm.com/book/en/v2/images/areas.png" alt="Git workflow" style="max-width:100%; border-radius:8px;">
