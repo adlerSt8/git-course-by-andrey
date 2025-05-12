@@ -99,7 +99,8 @@ nav_order: 4
 
 <div class="container">
   <h2 style="font-size:2rem;"><i class="fas fa-question-circle step-icon"></i> Что такое ветка?</h2>
-  <p>Ветка в Git — это указатель на определённый коммит, позволяющий работать над отдельными частями проекта, не затрагивая основную ветку (<code>main</code>). Ветки используются для разработки новых функций, исправления багов или экспериментов.</p>
+  <p>Ветка — это отдельная линия разработки в Git, которая позволяет работать над изменениями, не затрагивая основной код проекта(<code>main</code>). Каждая ветка указывает на определённый коммит (снимок проекта) и может содержать свои изменения. Как это работает. Когда вы создаёте ветку, Git делает «копию» текущего состояния проекта, чтобы вы могли вносить изменения. Основная ветка (обычно <code>main</code>) остаётся нетронутой, пока вы не решите объединить изменения.
+   Зачем нужна. Ветки позволяют экспериментировать, разрабатывать новые функции или исправлять ошибки безопасно. В командной работе каждый участник создаёт свою ветку, чтобы добавить свой вопрос, не мешая другим.</p>
   
   <div style="background:#e6f3ff; border-left:4px solid #007bff; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
     <p><strong>Простыми словами:</strong> Это как отдельная рабочая область, где вы можете экспериментировать, не боясь сломать основной проект.</p>
@@ -113,12 +114,14 @@ nav_order: 4
   </ul>
   
   <h3>Как это работает в Java-проектах?</h3>
-  <p>Представьте, вы работаете над Spring Boot приложением:</p>
+  <p>Представьте, вы работаете над викториной, где нужно добавить новый вопрос:</p>
   <ol>
-    <li>Создаете ветку: <code>feature-user-auth</code></li>
-    <li>Добавляете новый REST-контроллер</li>
-    <li>Тестируете изменения</li>
-    <li>Сливаете с основной веткой</li>
+    <li>Создаёте ветку: <code>question-alex</code></li>
+    <li>Редактируете файл Quiz.java, добавляя свой вопрос</li>
+    <li>Проверяете, что викторина работает</li>
+    <li>Сливаете с основной веткой.
+      <kbd>git checkout main</kbd>  
+      <kbd>git merge question-alex</kbd></li>
   </ol>
   
   <div style="background:#fff8e6; border-left:4px solid #ffc107; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
@@ -130,14 +133,13 @@ nav_order: 4
   <h3>Пошаговая инструкция</h3>
   <ol>
     <li><i class="fas fa-code-branch step-icon"></i> <strong>Создайте ветку:</strong></li>
-    <pre><kbd>git checkout -b feature-user-login</kbd></pre>
+    <pre><kbd>git checkout -b question-alex</kbd></pre>
     <p>Эта команда создаст новую ветку и сразу переключит вас на неё.</p>
-    
     <li><i class="fas fa-check-circle step-icon"></i> <strong>Проверьте текущую ветку:</strong></li>
     <pre><kbd>git branch</kbd></pre>
     <p>Звёздочка (*) покажет активную ветку.</p>
     
-    <li><i class="fas fa-exchange-alt step-icon"></i> <strong>Переключение между ветками:</strong></li>
+  <li><i class="fas fa-exchange-alt step-icon"></i> <strong>Переключение между ветками:</strong></li>
     <pre><kbd>git checkout main</kbd> <span style="color:#666;"># Вернуться в main</span></pre>
     <pre><kbd>git switch feature-user-login</kbd> <span style="color:#666;"># Современный вариант (Git 2.23+)</span></pre>
   </ol>
