@@ -1,4 +1,3 @@
----
 layout: default
 title: Система контроля версий Git
 permalink: /lessons/01-git-intro/
