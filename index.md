@@ -52,6 +52,3 @@ permalink: /
   </li>
 </ul>
 
-<footer style="text-align:center; margin:2rem 0; color:#777; font-size:0.9rem;">
-  Сделано с любовью ❤️
-</footer>
