@@ -113,10 +113,10 @@ nav_order: 5
   </ul>
   
   <h3>Как это работает на практике?</h3>
-  <p>Представьте, вы работаете над классом <code>UserService.java</code>:</p>
+  <p>Представьте, вы работаете над классом <code>Quest.java</code>:</p>
   <ol>
-    <li>Создаете отдельную ветку: <code>feature-user-auth</code></li>
-    <li>Добавляете новый метод аутентификации</li>
+    <li>Создаете отдельную ветку: <code>question_add</code></li>
+    <li>Добавляете новый вопрос</li>
     <li>Отправляете изменения на GitHub</li>
     <li>Создаете PR и просите коллег проверить ваш код</li>
   </ol>
@@ -130,29 +130,24 @@ nav_order: 5
   <h3>Пошаговая инструкция</h3>
   <ol>
     <li><i class="fas fa-code-branch step-icon"></i> <strong>Создайте ветку:</strong></li>
-    <pre><kbd>git checkout -b feature-user-login</kbd></pre>
+    <pre><kbd>git checkout -b question-alex</kbd></pre>
     <p>Эта команда создаст новую ветку и сразу переключит вас на неё.</p>
-    
     <li><i class="fas fa-edit step-icon"></i> <strong>Внесите изменения:</strong></li>
-    <p>Например, добавьте новый метод в <code>AuthController.java</code>:</p>
-    <pre><code>public ResponseEntity&lt;String&gt; loginUser(@RequestBody User user) {
-    // Ваш код аутентификации
-    return ResponseEntity.ok("Успешный вход!");
+    <p>Например, добавьте новый метод в <code>Question.java</code>:</p>
+    <pre><code>public Question&lt;String&gt;  {
+    // Ваш код добавления вопроса
 }</code></pre>
-    
     <li><i class="fas fa-save step-icon"></i> <strong>Сохраните изменения:</strong></li>
-    <pre><kbd>git add AuthController.java</kbd></pre>
-    <pre><kbd>git commit -m "Добавлен метод входа пользователя"</kbd></pre>
-    
+    <pre><kbd>git add Question.java</kbd></pre>
+    <pre><kbd>git commit -m "Добавлен вопрос пользователя"</kbd></pre>
     <li><i class="fas fa-upload step-icon"></i> <strong>Отправьте на GitHub:</strong></li>
-    <pre><kbd>git push origin feature-user-login</kbd></pre>
-    
+    <pre><kbd>git push origin question-alex</kbd></pre>
     <li><i class="fas fa-code-pull-request step-icon"></i> <strong>Создайте PR на GitHub:</strong></li>
     <p>После push откройте GitHub, перейдите в свой репозиторий:</p>
     <ol type="a">
       <li>Нажмите на вкладку <strong>Pull requests</strong></li>
       <li>Выберите <strong>New pull request</strong></li>
-      <li>Укажите вашу ветку (feature-user-login) и целевую (main)</li>
+      <li>Укажите вашу ветку (question-alex) и целевую (main)</li>
       <li>Заполните описание: что изменили и зачем</li>
       <li>Нажмите <strong>Create pull request</strong></li>
     </ol>
@@ -160,7 +155,7 @@ nav_order: 5
   
   <div style="background:#e6ffe6; border-left:4px solid #28a745; padding:1rem; margin:1.5rem 0; border-radius:0 4px 4px 0;">
     <p><strong>Совет:</strong> В описании PR используйте чеклист, чтобы показать, что сделано:</p>
-    <pre><code>- [x] Добавлен метод loginUser()
+    <pre><code>- [x] Добавлен вопрос
 - [ ] Написаны тесты (сделаю в следующем PR)</code></pre>
   </div>
 
@@ -191,13 +186,10 @@ nav_order: 5
     <li>Если согласны — исправьте и сообщите об этом</li>
     <pre><kbd>git commit -m "Добавил проверку длины пароля"</kbd></pre>
     <pre><kbd>git push origin feature-user-login</kbd></pre>
-    
     <li>Если не согласны — вежливо объясните свою позицию</li>
     <p>"Спасибо за замечание! Я специально не добавлял эту проверку, потому что минимальная длина задаётся в настройках безопасности."</p>
   </ol>
-  
   <h2 style="font-size:2rem;"><i class="fas fa-check-circle step-icon"></i> Как правильно завершить PR</h2>
-  
   <h3>Когда можно мержить?</h3>
   <ul>
     <li>Все комментарии учтены</li>
@@ -208,14 +200,14 @@ nav_order: 5
   <h3>Типы слияния:</h3>
 <ol>
   <li><strong>Merge commit:</strong> Сохраняет историю всех коммитов</li>
-  <pre><code>git merge --no-ff feature-user-login</code></pre>
+  <pre><code>git merge --no-ff question-alex</code></pre>
   
   <li><strong>Squash and merge:</strong> Объединяет все коммиты PR в один (для небольших изменений)</li>
   <pre><code># 1. Переключитесь на основную ветку
 git checkout main
 
 # 2. Выполните squash-merge
-git merge --squash feature-user-login
+git merge --squash question-alex
 
 # 3. Создайте новый коммит (все изменения из PR станут одним коммитом)
 git commit -m "Добавлена аутентификация пользователя"
@@ -233,10 +225,9 @@ git push origin main</code></pre>
 
   <div style="background:#f8f9fa; border-left:4px solid #007bff; padding:1rem; margin:1rem 0; border-radius:0 4px 4px 0;">
   <h4 style="margin-top:0;"><i class="fas fa-comment-dots"></i> Пример хорошего сообщения для squash-коммита:</h4>
-  <pre><code>feat: Добавлена аутентификация пользователя
+  <pre><code>feat: Добавлен вопрос пользователя
 
-- Реализован метод loginUser() 
-- Добавлена валидация пароля
+- Реализован объект вопроса и ответа() 
 - Написаны базовые тесты
 - Обновлена документация</code></pre>
   <p><i class="fas fa-lightbulb"></i> <strong>Совет:</strong> Используйте <a href="https://www.conventionalcommits.org/" style="color:#007bff;">Conventional Commits</a> для стандартизации сообщений.</p>
